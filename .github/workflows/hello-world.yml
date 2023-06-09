@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Test out Enviroment variables
+      - name: Show me the environment variables
+        run: |
+          echo You have ${{env.PRODUCTION}}
+         
