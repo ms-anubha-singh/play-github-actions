@@ -40,5 +40,5 @@ jobs:
       # Print deployment environment
       - name: Print deployment environment
         run: |
-          echo "Deployment environment: ${{ github.environment}}"
+          echo "Deployment environment: ${{ vars.environment}}"
          
