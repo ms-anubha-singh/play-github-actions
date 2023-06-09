@@ -47,5 +47,5 @@ jobs:
       # Print deployment environment
       - name: Print deployment environment
         run: |
-          echo "Deployment environment: ${{ github.event.inputs.environment || 'testing' }}"
+          echo "Deployment environment: ${{ github.event.inputs.environment || 'production' }}"
          
