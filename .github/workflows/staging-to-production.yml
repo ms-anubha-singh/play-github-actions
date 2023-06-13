@@ -44,7 +44,7 @@ jobs:
       # Print deployment environment
       - name: Print deployment environment
         run: |
-          echo "Deployment environment: ${{ vars.MARGE}}"
+          echooo "Deployment environment: ${{ vars.MARGE}}"
 
 
   job2:
