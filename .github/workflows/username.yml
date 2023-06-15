@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       username:
-        description: "Give me your username"
-        default: "Bart Simpson"
+        description: "Enter the database transaction value"
         type: "string"
   
 jobs:
