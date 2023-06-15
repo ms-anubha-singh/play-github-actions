@@ -1,0 +1,25 @@
+name: Enter your username workflow
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Give me your username"
+        default: "Bart Simpson"
+        type: "string"
+  
+jobs:
+
+  job1:
+    name: Job1
+    runs-on: ubuntu-latest
+    environment: staging
+    
+    steps:
+      - name: Echo the username
+        run: echo The Username is ${{inputs.username}}
+    
+     
+  
